@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P &amp; J's Automotive | Modern Auto Repair in West Palm Beach, FL — Since 1986</title>
+<meta name="description" content="Honest, ASE-certified auto repair in West Palm Beach, FL. Family-run since 1986. Book online in 30 seconds — brakes, A/C, engine, transmission, tires & more, backed by a 24-month/24,000-mile nationwide warranty.">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:title" content="P &amp; J's Automotive | Auto Repair in West Palm Beach Since 1986">
+<meta property="og:description" content="Honest, ASE-certified auto repair backed by a nationwide warranty. Book online in 30 seconds.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b1020; --ink-2:#111a2e; --slate:#5a6678; --line:#e9edf3;
+  --accent:#ff3b30; --accent-2:#ff6a3d; --accent-ink:#c81e14;
+  --gold:#ffb020; --bg:#ffffff; --soft:#f5f7fb; --soft-2:#eef2f8;
+  --r:22px; --r-sm:14px;
+  --sh:0 14px 40px rgba(11,16,32,.09); --sh-lg:0 34px 80px rgba(11,16,32,.20);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;line-height:1.08;letter-spacing:-.02em;font-weight:700}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:'Space Grotesk';font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);background:#ff3b3010;border:1px solid #ff3b3024;padding:.35rem .8rem;border-radius:999px}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-family:'Space Grotesk';font-size:.98rem;padding:.95rem 1.7rem;border-radius:999px;transition:.22s;cursor:pointer;border:0}
+.btn svg{width:18px;height:18px}
+.btn-accent{background:linear-gradient(120deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 12px 26px rgba(255,59,48,.34)}
+.btn-accent:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(255,59,48,.42)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--ink-2);transform:translateY(-2px)}
+.btn-line{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn-line:hover{border-color:var(--ink);transform:translateY(-2px)}
+.icn{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* nav */
+.navwrap{position:sticky;top:0;z-index:70;padding:.9rem 0;transition:.25s}
+.navwrap.scrolled{background:rgba(255,255,255,.82);backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(11,16,32,.06);padding:.5rem 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:999px;padding:.55rem .8rem .55rem 1.3rem;box-shadow:var(--sh)}
+.navwrap.scrolled .nav{box-shadow:none;border-color:transparent;background:transparent;backdrop-filter:none}
+.logo{display:flex;align-items:center;gap:.6rem}
+.logo img{height:46px;width:auto}
+.logo .fb{font-family:'Space Grotesk';font-weight:700;font-size:1.2rem}
+.logo .fb span{color:var(--accent)}
+.nav-links{display:flex;gap:1.6rem;align-items:center;font-weight:500;font-size:.95rem}
+.nav-links a{color:var(--ink-2);opacity:.85}
+.nav-links a:hover{opacity:1;color:var(--accent)}
+.nav-cta{display:flex;align-items:center;gap:.8rem}
+.nav-phone{font-family:'Space Grotesk';font-weight:700;color:var(--ink);font-size:1rem;white-space:nowrap}
+.menu-btn{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:.3rem}
+
+/* hero */
+.hero{position:relative;padding:3.4rem 0 4.6rem;overflow:hidden}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;z-index:0}
+.hero .b1{width:520px;height:520px;background:#ff3b3033;top:-160px;right:-120px}
+.hero .b2{width:440px;height:440px;background:#2f6bff22;bottom:-160px;left:-140px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.1rem);margin:1.1rem 0 1.1rem}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.17rem;color:var(--slate);max-width:540px;margin-bottom:1.9rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-bottom:1.9rem}
+.hero .mini{display:flex;flex-wrap:wrap;gap:1.4rem;font-size:.9rem;color:var(--slate);font-weight:500}
+.hero .mini span{display:flex;align-items:center;gap:.45rem}
+.hero .mini svg{width:17px;height:17px;stroke:var(--accent);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+/* hero visual */
+.hero-media{position:relative}
+.hero-media .frame{border-radius:28px;overflow:hidden;box-shadow:var(--sh-lg);aspect-ratio:16/13;background:var(--ink)}
+.hero-media .frame img{width:100%;height:100%;object-fit:cover}
+.floatcard{position:absolute;background:rgba(255,255,255,.72);backdrop-filter:blur(16px);border:1px solid #ffffffcc;border-radius:16px;box-shadow:var(--sh-lg);padding:.85rem 1.05rem;display:flex;align-items:center;gap:.7rem}
+.fc-rating{top:22px;left:-26px}
+.fc-rating .n{font-family:'Space Grotesk';font-weight:700;font-size:1.5rem;line-height:1}
+.fc-rating .s{color:var(--gold);font-size:.82rem;letter-spacing:.06em}
+.fc-rating .t{font-size:.72rem;color:var(--slate)}
+.fc-warranty{bottom:24px;right:-24px;flex-direction:column;align-items:flex-start;gap:.15rem}
+.fc-warranty .ic{width:34px;height:34px;border-radius:9px;background:#ff3b3014;color:var(--accent);display:grid;place-items:center;margin-bottom:.2rem}
+.fc-warranty .h{font-family:'Space Grotesk';font-weight:700;font-size:.95rem}
+.fc-warranty .p{font-size:.72rem;color:var(--slate)}
+
+/* logos strip */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soft)}
+.strip .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1.2rem 2.6rem;padding:1.3rem 0}
+.strip .lab{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:700}
+.strip .pill{display:flex;align-items:center;gap:.5rem;font-family:'Space Grotesk';font-weight:600;font-size:.92rem;color:var(--ink-2)}
+.strip .pill svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+section.pad{padding:5.4rem 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 3.2rem}
+.sec-head h2{font-size:clamp(2rem,3.9vw,2.8rem);margin:.8rem 0 .7rem}
+.sec-head p{color:var(--slate);font-size:1.07rem}
+
+/* services bento */
+.services{background:var(--soft)}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.8rem;transition:.24s;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);border-color:transparent}
+.card .ic{width:56px;height:56px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(140deg,#ff3b3012,#2f6bff10);color:var(--accent);margin-bottom:1.05rem}
+.card h3{font-size:1.14rem;margin-bottom:.4rem;font-weight:600}
+.card p{color:var(--slate);font-size:.95rem}
+.card.feature{grid-row:span 2;background:linear-gradient(160deg,var(--ink),var(--ink-2));color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.card.feature .ic{background:#ffffff14;color:#fff}
+.card.feature h3{font-size:1.5rem;margin-bottom:.6rem}
+.card.feature p{color:#c3ccdb;margin-bottom:1.4rem}
+.card.feature .mini-list{list-style:none;display:grid;gap:.5rem;font-size:.92rem;font-weight:500}
+.card.feature .mini-list li{display:flex;gap:.5rem;align-items:center}
+.card.feature .mini-list svg{width:17px;height:17px;stroke:var(--accent-2);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* booking */
+.booking{background:linear-gradient(165deg,var(--ink),#0a1327);color:#fff;position:relative;overflow:hidden}
+.booking .glow{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,#ff3b3033,transparent 62%);top:-200px;left:-120px}
+.book-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.05fr;gap:3.4rem;align-items:center}
+.book-copy .eyebrow{background:#ffffff10;border-color:#ffffff22;color:#ff8a7d}
+.book-copy h2{font-size:clamp(2rem,3.9vw,2.9rem);margin:1rem 0 1rem;color:#fff}
+.book-copy p{color:#c3ccdb;font-size:1.08rem;margin-bottom:1.6rem}
+.book-benefits{list-style:none;display:grid;gap:.9rem}
+.book-benefits li{display:flex;gap:.8rem;align-items:flex-start}
+.book-benefits .bic{width:40px;height:40px;flex:none;border-radius:11px;background:#ffffff10;display:grid;place-items:center;color:var(--accent-2)}
+.book-benefits b{font-family:'Space Grotesk';font-weight:600;display:block}
+.book-benefits span{color:#aab6c8;font-size:.92rem}
+.book-form{background:#fff;color:var(--ink);border-radius:24px;padding:2rem;box-shadow:var(--sh-lg)}
+.book-form h3{font-size:1.35rem;margin-bottom:.3rem}
+.book-form .fsub{color:var(--slate);font-size:.92rem;margin-bottom:1.3rem}
+.field{margin-bottom:.95rem}
+.field label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.35rem;color:var(--ink-2)}
+.field input,.field select{width:100%;padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:12px;font-family:inherit;font-size:.95rem;color:var(--ink);background:#fff;transition:.18s}
+.field input:focus,.field select:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px #ff3b301f}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.book-form .btn{width:100%;justify-content:center;margin-top:.4rem}
+.book-success{display:none;text-align:center;padding:2.5rem 1rem}
+.book-success .ok{width:66px;height:66px;border-radius:50%;background:#12b76a15;color:#12b76a;display:grid;place-items:center;margin:0 auto 1rem}
+.book-success h3{font-size:1.4rem;margin-bottom:.4rem}
+.book-success p{color:var(--slate)}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:3.6rem;align-items:center}
+.about-media{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-lg);aspect-ratio:4/3;background:var(--ink)}
+.about-media img{width:100%;height:100%;object-fit:cover}
+.about-media .tag{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-radius:14px;padding:.7rem 1rem;display:flex;align-items:center;gap:.7rem;box-shadow:var(--sh)}
+.about-media .tag .b{font-family:'Space Grotesk';font-weight:700;font-size:1.7rem;color:var(--accent);line-height:1}
+.about-media .tag .s{font-size:.74rem;color:var(--slate);text-transform:uppercase;letter-spacing:.08em}
+.about-body h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:1rem}
+.about-body p{color:var(--slate);margin-bottom:1rem}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1rem;margin:1.5rem 0}
+.checks li{display:flex;gap:.55rem;align-items:flex-start;font-weight:500;font-size:.95rem}
+.checks li svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:2.4;flex:none;margin-top:2px;stroke-linecap:round;stroke-linejoin:round}
+
+/* stats */
+.statband{background:#fff}
+.statband .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;text-align:center}
+.statband .st{padding:1.4rem;border-radius:var(--r);background:var(--soft)}
+.statband .num{font-family:'Space Grotesk';font-weight:700;font-size:2.4rem;color:var(--ink);line-height:1}
+.statband .num span{color:var(--accent)}
+.statband .lab{font-size:.82rem;text-transform:uppercase;letter-spacing:.07em;color:var(--slate);margin-top:.4rem;font-weight:600}
+
+/* reviews */
+.reviews{background:var(--soft)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.7rem;transition:.2s}
+.rev:hover{box-shadow:var(--sh);transform:translateY(-3px)}
+.rev .stars{color:var(--gold);letter-spacing:.1em;margin-bottom:.7rem}
+.rev p{font-size:.97rem;color:var(--ink-2);margin-bottom:1.1rem}
+.rev .who{display:flex;align-items:center;gap:.7rem}
+.rev .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(140deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-family:'Space Grotesk';font-weight:700;font-size:.95rem;color:#fff}
+.rev .nm{font-family:'Space Grotesk';font-weight:600;font-size:.95rem}
+.rev .mt{font-size:.78rem;color:var(--slate)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:3rem;align-items:stretch}
+.info-row{display:flex;gap:1rem;align-items:flex-start;padding:1.15rem 0;border-bottom:1px solid var(--line)}
+.info-row .ic{width:48px;height:48px;flex:none;border-radius:13px;background:var(--soft);color:var(--accent);display:grid;place-items:center}
+.info-row h4{font-size:1rem;margin-bottom:.15rem;font-weight:600}
+.info-row a,.info-row span{color:var(--slate)}
+.info-row a:hover{color:var(--accent)}
+.hours-table{width:100%;border-collapse:collapse;margin-top:.3rem}
+.hours-table td{padding:.28rem 0;color:var(--slate);font-size:.95rem}
+.hours-table td:last-child{text-align:right;font-weight:600;color:var(--ink)}
+.map-frame{border:0;width:100%;height:100%;min-height:430px;border-radius:var(--r);box-shadow:var(--sh)}
+
+/* footer */
+footer{background:var(--ink);color:#9aa6b8;padding:3.4rem 0 1.5rem;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2.2rem;padding-bottom:2rem;border-bottom:1px solid #ffffff12}
+footer h4{color:#fff;font-size:1rem;margin-bottom:.9rem;font-family:'Space Grotesk'}
+footer .fname{font-family:'Space Grotesk';font-weight:700;font-size:1.4rem;color:#fff}
+footer .fname span{color:var(--accent)}
+footer ul{list-style:none}
+footer ul li{margin-bottom:.5rem}
+footer a:hover{color:#fff}
+.socials{display:flex;gap:.6rem;margin-top:1rem}
+.socials a{width:38px;height:38px;border-radius:50%;background:#ffffff10;display:grid;place-items:center;transition:.2s}
+.socials a:hover{background:var(--accent)}
+.socials svg{width:18px;height:18px;fill:#fff}
+.foot-bottom{padding-top:1.3rem;text-align:center;font-size:.82rem;color:#6f7d90}
+
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:80;background:linear-gradient(120deg,var(--accent),var(--accent-2));color:#fff;text-align:center;padding:.95rem;font-family:'Space Grotesk';font-weight:700;box-shadow:0 -6px 20px rgba(0,0,0,.22)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:960px){
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .nav-links.open{display:flex;position:absolute;top:calc(100% + 8px);left:4%;right:4%;flex-direction:column;background:#fff;padding:1.2rem;border-radius:18px;box-shadow:var(--sh-lg);gap:1rem}
+  .hero-grid,.book-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:2.4rem}
+  .hero-media{max-width:520px;margin:0 auto}
+  .bento{grid-template-columns:1fr 1fr}
+  .card.feature{grid-row:auto}
+  .statband .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .bento,.rev-grid,.foot-grid,.frow{grid-template-columns:1fr}
+  .checks{grid-template-columns:1fr}
+  .nav-phone{display:none}
+  .callbar{display:block}
+  body{padding-bottom:58px}
+  .fc-rating{left:0}.fc-warranty{right:0}
+}
+</style>
+</head>
+<body>
+
+<div class="navwrap" id="navwrap"><div class="wrap"><div class="nav">
+  <a href="#home" class="logo">
+    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3DwnTN9wsATA6rU9WA80JS5SVYN/5dc375dc-0847-4a21-ad5c-b08810b07504.png" alt="P & J's Automotive"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="fb" style="display:none">P&amp;J's <span>Automotive</span></span>
+  </a>
+  <nav class="nav-links" id="navlinks">
+    <a href="#services">Services</a>
+    <a href="#book">Book Online</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-cta">
+    <a href="tel:5616868488" class="nav-phone">(561) 686-8488</a>
+    <a href="#book" class="btn btn-accent">Book Service</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg class="icn" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</div></div></div>
+
+<section class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">★ West Palm Beach · Since 1986</span>
+      <h1>Honest Auto Repair, <em>Booked in 30 Seconds.</em></h1>
+      <p class="lead">Family-run for 40 years, P &amp; J's keeps West Palm Beach on the road with straight answers, fair prices, and expert work on imports and domestics — now with online booking and a nationwide warranty on every job.</p>
+      <div class="cta">
+        <a href="#book" class="btn btn-accent"><svg class="icn" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Book an Appointment</a>
+        <a href="tel:5616868488" class="btn btn-line"><svg class="icn" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> (561) 686-8488</a>
+      </div>
+      <div class="mini">
+        <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> ASE Certified Techs</span>
+        <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> 24mo / 24k Warranty</span>
+        <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Imports &amp; Domestic</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="frame"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3DwnTN9wsATA6rU9WA80JS5SVYN/hf_20260707_191329_bffcf058-9da6-42ff-9d19-35b86db5a114.png" alt="Modern auto repair service bay"></div>
+      <div class="floatcard fc-rating">
+        <div><div class="n">4.9</div><div class="s">★★★★★</div></div>
+        <div class="t">Rated by<br>200+ drivers</div>
+      </div>
+      <div class="floatcard fc-warranty">
+        <div class="ic"><svg class="icn" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="h">Nationwide Warranty</div>
+        <div class="p">24-Month / 24,000-Mile</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip"><div class="wrap">
+  <span class="lab">Trusted &amp; Certified</span>
+  <span class="pill"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"/></svg> ASE Certified</span>
+  <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/></svg> Auto Value Service Center</span>
+  <span class="pill"><svg viewBox="0 0 24 24"><path d="M3 12h4l2 5 4-13 2 8h6"/></svg> BG Products</span>
+  <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/></svg> Car Care Aware</span>
+</div></div>
+
+<section class="pad services" id="services"><div class="wrap">
+  <div class="sec-head reveal">
+    <span class="eyebrow">What We Do</span>
+    <h2>Everything Your Vehicle Needs</h2>
+    <p>One trusted shop for imports and domestics alike — from a quick oil change to a major engine job.</p>
+  </div>
+  <div class="bento">
+    <div class="card feature reveal">
+      <div>
+        <div class="ic"><svg class="icn" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2z"/></svg></div>
+        <h3>Full-Service Repair &amp; Maintenance</h3>
+        <p>Warranty-safe scheduled maintenance and expert repairs — the honest alternative to the dealership.</p>
+      </div>
+      <ul class="mini-list">
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Factory-scheduled maintenance</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Fleet &amp; personal vehicles</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Free honest estimates</li>
+      </ul>
+    </div>
+    <div class="card reveal"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><h3>Brakes &amp; Rotors</h3><p>Pads, rotors, and hydraulics so you stop safely, every time.</p></div>
+    <div class="card reveal"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><path d="M12 2v20M6 6 4 4M18 6l2-2M6 18l-2 2M18 18l2 2M2 12h20"/></svg></div><h3>A/C &amp; Heating</h3><p>Full A/C diagnostics, recharge, and climate-system repair.</p></div>
+    <div class="card reveal"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><path d="M6 9V6h4l2-2h4v3h3v5h-2v3H9l-2 2H5v-3H3V9z"/></svg></div><h3>Engine &amp; Diagnostics</h3><p>State-of-the-art diagnostics that pinpoint the problem fast.</p></div>
+    <div class="card reveal"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div><h3>Transmission</h3><p>Service and repair for automatic and manual transmissions.</p></div>
+    <div class="card reveal"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/></svg></div><h3>Tires &amp; Alignment</h3><p>Name-brand tires, balancing, and precision wheel alignments.</p></div>
+  </div>
+</div></section>
+
+<section class="booking" id="book"><div class="glow"></div><div class="wrap">
+  <div class="book-grid">
+    <div class="book-copy reveal">
+      <span class="eyebrow">Online Booking</span>
+      <h2>Skip the Phone Tag. Book in 30 Seconds.</h2>
+      <p>Pick your service and a time that works for you. No waiting on hold — you'll get a confirmation and we'll have the bay ready.</p>
+      <ul class="book-benefits">
+        <li><div class="bic"><svg class="icn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>Request any time, day or night</b><span>Book after hours — we'll confirm first thing.</span></div></li>
+        <li><div class="bic"><svg class="icn" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div><div><b>Instant confirmation</b><span>Know your slot's locked in — no callbacks needed.</span></div></li>
+        <li><div class="bic"><svg class="icn" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/></svg></div><div><b>Every job warrantied</b><span>24-month / 24,000-mile nationwide coverage.</span></div></li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <form class="book-form" id="bookForm">
+        <h3>Request Your Appointment</h3>
+        <div class="fsub">We'll confirm by phone or text, usually within the hour.</div>
+        <div class="field"><label>Service needed</label>
+          <select required>
+            <option value="">Select a service…</option>
+            <option>Oil Change &amp; Maintenance</option>
+            <option>Brakes</option>
+            <option>A/C &amp; Heating</option>
+            <option>Engine / Check-Engine Light</option>
+            <option>Transmission</option>
+            <option>Tires &amp; Alignment</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="frow">
+          <div class="field"><label>Preferred date</label><input type="date" required></div>
+          <div class="field"><label>Preferred time</label>
+            <select required>
+              <option value="">Choose…</option>
+              <option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option>
+              <option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option>
+              <option>3:00 PM</option><option>4:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="field"><label>Your name</label><input type="text" required placeholder="Jane Driver"></div>
+          <div class="field"><label>Phone</label><input type="tel" required placeholder="(561) 000-0000"></div>
+        </div>
+        <div class="field"><label>Vehicle (year / make / model)</label><input type="text" placeholder="2019 Toyota Camry"></div>
+        <button type="submit" class="btn btn-accent">Request Appointment</button>
+      </form>
+      <div class="book-form book-success" id="bookSuccess">
+        <div class="ok"><svg class="icn" viewBox="0 0 24 24" style="width:34px;height:34px"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Request received!</h3>
+        <p>Thanks — we'll confirm your appointment shortly. Need it sooner? Call us at (561) 686-8488.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="pad" id="about"><div class="wrap">
+  <div class="about-grid">
+    <div class="about-media reveal">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3DwnTN9wsATA6rU9WA80JS5SVYN/hf_20260707_191329_bffcf058-9da6-42ff-9d19-35b86db5a114.png" alt="Inside P & J's Automotive">
+      <div class="tag"><div class="b">40</div><div class="s">Years in<br>West Palm Beach</div></div>
+    </div>
+    <div class="about-body reveal">
+      <span class="eyebrow">Who We Are</span>
+      <h2>A Name Drivers Have Trusted Since 1986</h2>
+      <p>P &amp; J's Automotive is a full-service preventive maintenance and repair center that's kept West Palm Beach moving for nearly four decades. We service imported and domestic cars, trucks, and SUVs — and we do it the honest way.</p>
+      <p>We're the preferred alternative to the dealership for scheduled maintenance, with the staff, skills, and equipment to keep your new-car warranty intact. Bring your vehicle in confident it'll be fixed right the first time.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Warranty-safe maintenance</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Honest, upfront estimates</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> ASE Certified technicians</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Imports &amp; domestic</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Personal &amp; fleet service</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Nationwide warranty</li>
+      </ul>
+      <a href="#book" class="btn btn-dark">Book Your Visit</a>
+    </div>
+  </div>
+</div></section>
+
+<div class="statband"><div class="wrap"><div class="grid">
+  <div class="st reveal"><div class="num">1986</div><div class="lab">Serving WPB Since</div></div>
+  <div class="st reveal"><div class="num">40<span>+</span></div><div class="lab">Years Experience</div></div>
+  <div class="st reveal"><div class="num">4.9<span>★</span></div><div class="lab">Customer Rating</div></div>
+  <div class="st reveal"><div class="num">24k</div><div class="lab">Mile Warranty</div></div>
+</div></div></div>
+
+<section class="pad reviews" id="reviews"><div class="wrap">
+  <div class="sec-head reveal">
+    <span class="eyebrow">★ Real Reviews</span>
+    <h2>Neighbors Who Trust Us</h2>
+    <p>Real words from West Palm Beach drivers — some going back more than 25 years.</p>
+  </div>
+  <div class="rev-grid">
+    <div class="rev reveal"><div class="stars">★★★★★</div><p>"Great service today as it always is. Standard dealerships in the area could learn a lesson from you. Keep up the great work."</p><div class="who"><div class="av">PB</div><div><div class="nm">Paul B.</div><div class="mt">Palm Beach Gardens, FL</div></div></div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p>"We've been going to P &amp; J's for close to 25 years. We completely trust them — honest, reliable, and they do what they say. Their entire staff is GREAT!"</p><div class="who"><div class="av">LB</div><div><div class="nm">Linda B.</div><div class="mt">25-year customer</div></div></div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p>"By far the best shop in Palm Beach County. I've been going here over 10 years and never once had an unpleasant experience."</p><div class="who"><div class="av">JS</div><div><div class="nm">Jeff S.</div><div class="mt">Google Review</div></div></div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p>"Finding this place was a blessing! Dropped my car one day, got it back the next running like new. I'm a college student on my own and never felt taken advantage of."</p><div class="who"><div class="av">AL</div><div><div class="nm">Amy L.</div><div class="mt">Google Review</div></div></div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p>"I take my truck here for any major problem I can't fix myself. Every time it comes back running like new. Honest, and he gets it done on time."</p><div class="who"><div class="av">TB</div><div><div class="nm">Travis B.</div><div class="mt">Google Review</div></div></div></div>
+    <div class="rev reveal"><div class="stars">★★★★★</div><p>"Fairly priced, fast, and honest about what my car needs. So many mechanics assume a woman doesn't know a thing — not here. I'll tell everyone I know!"</p><div class="who"><div class="av">DG</div><div><div class="nm">Danielle</div><div class="mt">Google Review</div></div></div></div>
+  </div>
+</div></section>
+
+<section class="pad" id="contact"><div class="wrap">
+  <div class="sec-head reveal">
+    <span class="eyebrow">Get In Touch</span>
+    <h2>Visit P &amp; J's Automotive</h2>
+    <p>On Latham Rd in West Palm Beach, serving all of Palm Beach County.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="reveal">
+      <div class="info-row"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Address</h4><a href="https://maps.google.com/?q=1781+Latham+Rd+West+Palm+Beach+FL+33409">1781 Latham Rd, West Palm Beach, FL 33409</a></div></div>
+      <div class="info-row"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div><div><h4>Phone</h4><a href="tel:5616868488">(561) 686-8488</a></div></div>
+      <div class="info-row"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><div><h4>Email</h4><a href="mailto:info@pandjautorepair.com">info@pandjautorepair.com</a></div></div>
+      <div class="info-row"><div class="ic"><svg class="icn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div style="flex:1"><h4>Hours</h4><table class="hours-table">
+        <tr><td>Monday – Friday</td><td>8:00 AM – 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>Closed</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table></div></div>
+    </div>
+    <iframe class="map-frame" loading="lazy" src="https://www.google.com/maps?q=1781+Latham+Rd+West+Palm+Beach+FL+33409&output=embed" title="P & J's Automotive location"></iframe>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <div class="fname">P &amp; J's <span>Automotive</span></div>
+      <p style="margin-top:.8rem">Honest, guaranteed auto repair and preventive maintenance for West Palm Beach and all of Palm Beach County since 1986.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/PandJsAutomotive" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v7h3v-7h2.5l.5-3H14V9z"/></svg></a>
+        <a href="https://www.instagram.com/pandjautomotive/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10.5 2.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a>
+        <a href="https://www.yelp.com/biz/p-and-js-automotive-west-palm-beach" aria-label="Yelp"><svg viewBox="0 0 24 24"><path d="M11 3v9l-4-2c-1 3 0 5 0 5l4-1v6h2l1-6 3 3 2-2-3-3 4-2-1-3-5 2V3z"/></svg></a>
+      </div>
+    </div>
+    <div><h4>Services</h4><ul>
+      <li><a href="#services">Brakes &amp; A/C</a></li>
+      <li><a href="#services">Engine &amp; Transmission</a></li>
+      <li><a href="#services">Oil &amp; Maintenance</a></li>
+      <li><a href="#services">Tires &amp; Alignment</a></li>
+      <li><a href="#book">Book Online</a></li>
+    </ul></div>
+    <div><h4>Contact</h4><ul>
+      <li>📍 1781 Latham Rd, WPB, FL 33409</li>
+      <li>📞 <a href="tel:5616868488">(561) 686-8488</a></li>
+      <li>🕗 Mon–Fri 8AM–5PM</li>
+      <li><a href="#contact">Get Directions</a></li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">© <span id="yr"></span> P &amp; J's Automotive · West Palm Beach, FL · ASE Certified · Auto Value Certified Service Center</div>
+</div></footer>
+
+<a href="#book" class="callbar">📅 Book Your Service Online</a>
+
+<script>
+var nb=document.getElementById('navwrap');
+window.addEventListener('scroll',function(){nb.classList.toggle('scrolled',window.scrollY>20)});
+document.getElementById('menuBtn').addEventListener('click',function(){document.getElementById('navlinks').classList.toggle('open')});
+document.querySelectorAll('#navlinks a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('navlinks').classList.remove('open')})});
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('bookForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  this.style.display='none';
+  document.getElementById('bookSuccess').style.display='block';
+  document.getElementById('bookSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+});
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
