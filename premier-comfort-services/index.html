@@ -28,23 +28,22 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .serif{font-family:'Fraunces',serif}
 
-/* layout shell */
-.shell{display:flex}
-.rail{width:270px;position:fixed;top:0;left:0;height:100vh;background:var(--navy-3);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:1.6rem 1.5rem;z-index:60}
-.rail .logo{background:#fff;border-radius:14px;padding:.7rem;margin-bottom:1.8rem}
-.rail .logo img{width:100%;height:auto}
-.rail nav{display:flex;flex-direction:column;gap:.15rem;flex:1}
-.rail nav a{color:#c7cae8;font-weight:500;font-size:.98rem;padding:.6rem .7rem;border-radius:10px;display:flex;align-items:center;gap:.7rem;transition:.18s}
-.rail nav a .n{font-family:'Fraunces';font-size:.78rem;color:var(--orange);width:22px}
-.rail nav a:hover{background:#ffffff0d;color:#fff}
-.rail .railcta{margin-top:1rem;display:flex;flex-direction:column;gap:.6rem}
-.rail .phone{color:#fff;font-family:'Fraunces';font-weight:600;font-size:1.15rem;display:flex;align-items:center;gap:.5rem}
-.rail .phone small{display:block;font-family:'Inter';font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:#8a8fbf;font-weight:600}
-.rail .socials{display:flex;gap:.5rem;margin-top:1.1rem}
-.rail .socials a{width:34px;height:34px;border-radius:9px;background:#ffffff10;display:grid;place-items:center;transition:.18s}
-.rail .socials a:hover{background:var(--orange)}
-.rail .socials svg{width:16px;height:16px;fill:#fff}
-.content{margin-left:270px;width:calc(100% - 270px)}
+/* top header */
+.site-head{position:sticky;top:0;z-index:60;background:rgba(12,15,48,.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:.25s}
+.site-head.scrolled{background:rgba(12,15,48,.97);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.hwrap{width:92%;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.4rem;padding:.7rem 0}
+.brand{background:#fff;border-radius:12px;padding:.42rem .7rem;display:inline-flex;line-height:0}
+.brand img{height:42px;width:auto;display:block}
+.nav-links{display:flex;gap:1.7rem;align-items:center;font-weight:500;font-size:.96rem}
+.nav-links a{color:#cdd0ee;transition:.18s;position:relative}
+.nav-links a:hover{color:#fff}
+.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--orange);transition:right .25s}
+.nav-links a:hover::after{right:0}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-right .hphone{color:#fff;font-family:'Fraunces';font-weight:600;font-size:1.05rem;white-space:nowrap}
+.nav-right .hphone small{display:block;font-family:'Inter';font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:#8a8fbf;font-weight:600}
+.menu-btn{display:none;background:none;border:0;color:#fff;cursor:pointer}
+.content{width:100%}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Inter';font-weight:700;font-size:.96rem;padding:.9rem 1.5rem;border-radius:999px;transition:.2s;cursor:pointer;border:0;text-align:center}
 .btn svg{width:17px;height:17px}
@@ -175,9 +174,8 @@ footer a:hover{color:#fff}
   .rev-grid{columns:2}
 }
 @media(max-width:860px){
-  .rail{display:none}
-  .content{margin-left:0;width:100%}
-  .topbar{display:flex}
+  .nav-links{display:none}
+  .menu-btn{display:block}
   .hero .inner{grid-template-columns:1fr;text-align:center;padding-top:2.5rem}
   .hero .mascot{order:-1}
   .hero .mascot img{width:min(78%,340px)}
@@ -205,14 +203,25 @@ footer a:hover{color:#fff}
 </head>
 <body>
 
-<!-- MOBILE TOPBAR -->
-<div class="topbar">
-  <a href="#top" class="tlogo"><img src="https://premiercomfortac.com/wp-content/uploads/company-logo.svg" alt="Premier Comfort Services"></a>
-  <div class="tright">
-    <a href="tel:5614443670" class="btn btn-ghost" style="padding:.6rem 1rem">Call</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+<a id="top"></a>
+<header class="site-head" id="siteHead">
+  <div class="hwrap">
+    <a href="#top" class="brand"><img src="https://premiercomfortac.com/wp-content/uploads/company-logo.svg" alt="Premier Comfort Services"></a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Premier</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:5614443670" class="hphone">561-444-3670<small>West Palm Beach</small></a>
+      <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="btn btn-orange">Book Online</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
   </div>
-</div>
+</header>
 
 <div class="drawer" id="drawer">
   <div class="scrim" id="scrim"></div>
@@ -223,32 +232,7 @@ footer a:hover{color:#fff}
   </div>
 </div>
 
-<div class="shell" id="top">
-  <!-- SIDE RAIL -->
-  <aside class="rail">
-    <a href="#top" class="logo"><img src="https://premiercomfortac.com/wp-content/uploads/company-logo.svg" alt="Premier Comfort Services"></a>
-    <nav>
-      <a href="#services"><span class="n">01</span> Services</a>
-      <a href="#why"><span class="n">02</span> Why Premier</a>
-      <a href="#work"><span class="n">03</span> Our Work</a>
-      <a href="#reviews"><span class="n">04</span> Reviews</a>
-      <a href="#area"><span class="n">05</span> Service Area</a>
-      <a href="#contact"><span class="n">06</span> Contact</a>
-    </nav>
-    <div class="railcta">
-      <a href="tel:5614443670" class="phone"><small>West Palm Beach</small>561-444-3670</a>
-      <a href="tel:4075303670" class="phone"><small>Orlando</small>407-530-3670</a>
-      <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="btn btn-orange">Book Online</a>
-      <div class="socials">
-        <a href="https://www.facebook.com/PremierComfortFL/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v7h3v-7h2.5l.5-3H14V9z"/></svg></a>
-        <a href="https://www.instagram.com/premiercomfortac/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10.5 2.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a>
-        <a href="https://www.youtube.com/@premiercomfortservicesinc.167" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.4-5.1a2.7 2.7 0 0 0-1.9-1.9C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.7.5a2.7 2.7 0 0 0-1.9 1.9C1 8.5 1 12 1 12s0 3.5.4 5.1a2.7 2.7 0 0 0 1.9 1.9c1.8.5 8.7.5 8.7.5s6.9 0 8.7-.5a2.7 2.7 0 0 0 1.9-1.9C23 15.5 23 12 23 12zM10 15.5v-7l6 3.5z"/></svg></a>
-      </div>
-    </div>
-  </aside>
-
-  <!-- MAIN -->
-  <main class="content">
+<main class="content">
 
     <!-- HERO -->
     <section class="hero">
@@ -417,7 +401,6 @@ footer a:hover{color:#fff}
     </div></footer>
 
   </main>
-</div>
 
 <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="callbar">📅 Book Online with Premier Comfort</a>
 
@@ -427,6 +410,8 @@ document.getElementById('menuBtn').addEventListener('click',function(){d.classLi
 document.getElementById('scrim').addEventListener('click',function(){d.classList.remove('open')});
 document.querySelectorAll('#drawer .panel a').forEach(function(a){a.addEventListener('click',function(){d.classList.remove('open')})});
 document.getElementById('yr').textContent=new Date().getFullYear();
+var sh=document.getElementById('siteHead');
+window.addEventListener('scroll',function(){sh.classList.toggle('scrolled',window.scrollY>16)});
 var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 </script>
