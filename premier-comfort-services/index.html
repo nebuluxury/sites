@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier Comfort Services | HVAC, Plumbing &amp; Electrical — West Palm Beach &amp; Orlando</title>
+<meta name="description" content="Veteran-owned HVAC, plumbing, and electrical experts serving West Palm Beach, Orlando, and South &amp; Central Florida since 2011. One call for cooling, heating, plumbing, and electrical. Book online 24/7.">
+<meta name="theme-color" content="#12163f">
+<meta property="og:title" content="Premier Comfort Services | HVAC, Plumbing & Electrical">
+<meta property="og:description" content="Veteran-owned. One call for HVAC, plumbing & electrical across South & Central Florida. Excellence is our standard.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#12163f; --navy-2:#1b2160; --navy-3:#0c0f30;
+  --orange:#ef7a1a; --orange-2:#ff9838; --orange-ink:#c85f0a;
+  --cream:#f7f4ed; --cream-2:#efe9dd; --ink:#181a2e; --muted:#5c607a;
+  --line:rgba(255,255,255,.12); --line-d:#e5ded0;
+  --r:20px; --sh:0 20px 60px rgba(10,12,40,.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--navy);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.05;font-weight:700;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.serif{font-family:'Fraunces',serif}
+
+/* layout shell */
+.shell{display:flex}
+.rail{width:270px;position:fixed;top:0;left:0;height:100vh;background:var(--navy-3);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:1.6rem 1.5rem;z-index:60}
+.rail .logo{background:#fff;border-radius:14px;padding:.7rem;margin-bottom:1.8rem}
+.rail .logo img{width:100%;height:auto}
+.rail nav{display:flex;flex-direction:column;gap:.15rem;flex:1}
+.rail nav a{color:#c7cae8;font-weight:500;font-size:.98rem;padding:.6rem .7rem;border-radius:10px;display:flex;align-items:center;gap:.7rem;transition:.18s}
+.rail nav a .n{font-family:'Fraunces';font-size:.78rem;color:var(--orange);width:22px}
+.rail nav a:hover{background:#ffffff0d;color:#fff}
+.rail .railcta{margin-top:1rem;display:flex;flex-direction:column;gap:.6rem}
+.rail .phone{color:#fff;font-family:'Fraunces';font-weight:600;font-size:1.15rem;display:flex;align-items:center;gap:.5rem}
+.rail .phone small{display:block;font-family:'Inter';font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:#8a8fbf;font-weight:600}
+.rail .socials{display:flex;gap:.5rem;margin-top:1.1rem}
+.rail .socials a{width:34px;height:34px;border-radius:9px;background:#ffffff10;display:grid;place-items:center;transition:.18s}
+.rail .socials a:hover{background:var(--orange)}
+.rail .socials svg{width:16px;height:16px;fill:#fff}
+.content{margin-left:270px;width:calc(100% - 270px)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Inter';font-weight:700;font-size:.96rem;padding:.9rem 1.5rem;border-radius:999px;transition:.2s;cursor:pointer;border:0;text-align:center}
+.btn svg{width:17px;height:17px}
+.btn-orange{background:linear-gradient(120deg,var(--orange),var(--orange-2));color:#fff;box-shadow:0 12px 26px rgba(239,122,26,.34)}
+.btn-orange:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(239,122,26,.44)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid #ffffff44}
+.btn-ghost:hover{background:#ffffff12;border-color:#fff}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2);transform:translateY(-2px)}
+.eyebrow{font-family:'Inter';font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--orange)}
+
+/* topbar mobile */
+.topbar{display:none;position:sticky;top:0;z-index:70;background:var(--navy-3);border-bottom:1px solid var(--line);padding:.7rem 1rem;align-items:center;justify-content:space-between}
+.topbar .tlogo{background:#fff;border-radius:10px;padding:.4rem .6rem}
+.topbar .tlogo img{height:34px}
+.topbar .tright{display:flex;align-items:center;gap:.6rem}
+.menu-btn{background:none;border:0;color:#fff;cursor:pointer}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;
+  background:radial-gradient(120% 90% at 80% 0%,#2b3395 0%,var(--navy) 45%,var(--navy-3) 100%)}
+.hero .clouds{position:absolute;inset:0;background:
+  radial-gradient(40% 30% at 20% 20%,#ffffff14,transparent 60%),
+  radial-gradient(45% 35% at 75% 30%,#ffffff10,transparent 60%);pointer-events:none}
+.hero .inner{position:relative;z-index:3;display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;align-items:center;width:92%;max-width:1120px;margin:0 auto;padding:5rem 0}
+.hero .kicker{display:inline-flex;align-items:center;gap:.6rem;background:#ffffff12;border:1px solid #ffffff22;color:#dfe2ff;padding:.4rem .9rem;border-radius:999px;font-size:.8rem;font-weight:600;margin-bottom:1.4rem}
+.hero .kicker b{color:var(--orange-2)}
+.hero h1{color:#fff;font-size:clamp(3.2rem,7vw,6rem);font-weight:900;line-height:.94}
+.hero h1 .is{display:block;color:var(--orange);font-style:italic;font-weight:600;font-size:.62em;margin-top:.15em}
+.hero p.lead{color:#c9cdf0;font-size:1.15rem;max-width:440px;margin:1.6rem 0 2rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero .trades-line{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.5rem 1.3rem;color:#aeb3e0;font-size:.86rem;font-weight:600}
+.hero .trades-line span{display:flex;align-items:center;gap:.45rem}
+.hero .trades-line b{color:var(--orange-2)}
+.hero .mascot{position:relative;text-align:center}
+.hero .mascot img{width:min(115%,560px);margin:0 auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45));animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-16px) rotate(1deg)}}
+.hero .badge-vet{position:absolute;left:0;bottom:8%;background:#fff;color:var(--navy);border-radius:14px;padding:.7rem 1rem;box-shadow:var(--sh);font-family:'Fraunces';font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem}
+.hero .badge-vet svg{width:22px;height:22px;stroke:var(--orange);fill:none;stroke-width:2}
+
+/* ticker */
+.ticker{background:var(--orange);color:#fff;overflow:hidden;white-space:nowrap;padding:.7rem 0;font-family:'Fraunces';font-weight:600;letter-spacing:.02em}
+.ticker .run{display:inline-block;animation:scroll 26s linear infinite}
+.ticker span{margin:0 1.6rem;font-size:1rem}
+.ticker .dot{opacity:.6}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* pillars */
+.sec{padding:5.5rem 0}
+.sec .box{width:92%;max-width:1120px;margin:0 auto}
+.light{background:var(--cream);color:var(--ink)}
+.light h2{color:var(--navy)}
+.head-2{max-width:640px;margin-bottom:2.6rem}
+.head-2 h2{font-size:clamp(2.1rem,4.2vw,3.1rem);margin:.7rem 0 .6rem}
+.head-2 p{color:var(--muted);font-size:1.05rem}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.pillar{background:#fff;border:1px solid var(--line-d);border-radius:var(--r);padding:1.7rem;transition:.24s;position:relative;overflow:hidden}
+.pillar:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:transparent}
+.pillar .pn{font-family:'Fraunces';font-weight:700;font-size:.9rem;color:var(--orange)}
+.pillar .pic{width:52px;height:52px;border-radius:13px;background:var(--navy);color:var(--orange-2);display:grid;place-items:center;margin:.8rem 0 1rem}
+.pillar .pic svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pillar h3{font-size:1.35rem;color:var(--navy);margin-bottom:.5rem}
+.pillar ul{list-style:none;color:var(--muted);font-size:.92rem;display:grid;gap:.3rem}
+.pillar ul li{display:flex;gap:.45rem}
+.pillar ul li::before{content:"›";color:var(--orange);font-weight:800}
+
+/* why band */
+.why{background:linear-gradient(160deg,var(--navy-2),var(--navy-3));color:#fff;position:relative;overflow:hidden}
+.why .maskwm{position:absolute;right:-40px;bottom:-30px;width:340px;opacity:.10;pointer-events:none}
+.why .box{position:relative;z-index:2}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.4rem}
+.why-item{background:#ffffff08;border:1px solid var(--line);border-radius:var(--r);padding:1.6rem}
+.why-item .wic{width:46px;height:46px;border-radius:11px;background:var(--orange);display:grid;place-items:center;margin-bottom:.9rem}
+.why-item .wic svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why-item h4{font-size:1.2rem;margin-bottom:.35rem}
+.why-item p{color:#bcc0e6;font-size:.93rem}
+
+/* photos strip */
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.photos .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--navy-2)}
+.photos .ph img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.photos .ph:hover img{transform:scale(1.06)}
+
+/* reviews */
+.reviews{background:var(--cream)}
+.rev-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:2.4rem}
+.rev-grid{columns:3;column-gap:1.2rem}
+.rev{break-inside:avoid;background:#fff;border:1px solid var(--line-d);border-radius:var(--r);padding:1.5rem;margin-bottom:1.2rem;box-shadow:0 6px 18px rgba(10,12,40,.05)}
+.rev .stars{color:#f5a623;letter-spacing:.1em;margin-bottom:.6rem}
+.rev p{color:var(--ink);font-size:.95rem;margin-bottom:1rem}
+.rev .who{display:flex;align-items:center;justify-content:space-between}
+.rev .nm{font-family:'Fraunces';font-weight:700;color:var(--navy)}
+.rev .plat{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+/* booking CTA */
+.booking{background:var(--navy-3);color:#fff;position:relative;overflow:hidden}
+.booking .glow{position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,#ef7a1a33,transparent 62%);top:-220px;right:-140px}
+.book-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:2.6rem;align-items:center}
+.book-grid h2{font-size:clamp(2.2rem,4.4vw,3.3rem);color:#fff;margin-bottom:.8rem}
+.book-grid p{color:#c2c6ee;font-size:1.08rem;margin-bottom:1.6rem;max-width:520px}
+.book-cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.book-side{background:#ffffff0a;border:1px solid var(--line);border-radius:var(--r);padding:1.6rem}
+.book-side .row{display:flex;align-items:flex-start;gap:.8rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
+.book-side .row:last-child{border-bottom:0}
+.book-side .row .ic{width:38px;height:38px;flex:none;border-radius:10px;background:#ffffff12;display:grid;place-items:center;color:var(--orange-2)}
+.book-side .row .ic svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.book-side h4{font-size:.98rem;margin-bottom:.1rem}
+.book-side a,.book-side span{color:#b8bce4;font-size:.9rem}
+.book-side a:hover{color:#fff}
+
+/* footer */
+footer{background:var(--navy-3);color:#9498c8;border-top:1px solid var(--line);padding:2.6rem 0 1.6rem;font-size:.9rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid var(--line)}
+footer h4{color:#fff;font-family:'Fraunces';font-size:1.05rem;margin-bottom:.8rem}
+footer ul{list-style:none}
+footer li{margin-bottom:.42rem}
+footer a:hover{color:#fff}
+.foot-bottom{padding-top:1.2rem;text-align:center;font-size:.78rem;color:#6a6f9e;line-height:1.7}
+.lic{color:var(--orange-2)}
+
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:80;background:linear-gradient(120deg,var(--orange),var(--orange-2));color:#fff;text-align:center;padding:.9rem;font-family:'Fraunces';font-weight:700}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:1040px){
+  .pillars,.why-grid{grid-template-columns:1fr 1fr}
+  .rev-grid{columns:2}
+}
+@media(max-width:860px){
+  .rail{display:none}
+  .content{margin-left:0;width:100%}
+  .topbar{display:flex}
+  .hero .inner{grid-template-columns:1fr;text-align:center;padding-top:2.5rem}
+  .hero .mascot{order:-1}
+  .hero .mascot img{width:min(78%,340px)}
+  .hero .badge-vet{position:static;display:inline-flex;margin:1rem auto 0}
+  .hero p.lead,.hero .trades-line{margin-left:auto;margin-right:auto;justify-content:center}
+  .hero .cta{justify-content:center}
+  .book-grid,.foot-grid{grid-template-columns:1fr;gap:1.6rem}
+  .photos{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .pillars,.why-grid{grid-template-columns:1fr}
+  .rev-grid{columns:1}
+  .photos{grid-template-columns:1fr}
+  .callbar{display:block}
+  body{padding-bottom:56px}
+}
+/* mobile drawer */
+.drawer{display:none}
+.drawer.open{display:block;position:fixed;inset:0;z-index:90}
+.drawer .scrim{position:absolute;inset:0;background:rgba(8,10,30,.6)}
+.drawer .panel{position:absolute;top:0;right:0;width:80%;max-width:320px;height:100%;background:var(--navy-3);padding:1.5rem;display:flex;flex-direction:column;gap:.3rem}
+.drawer .panel a{color:#c7cae8;padding:.7rem;border-radius:10px;font-weight:600}
+.drawer .panel a:hover{background:#ffffff0d;color:#fff}
+</style>
+</head>
+<body>
+
+<!-- MOBILE TOPBAR -->
+<div class="topbar">
+  <a href="#top" class="tlogo"><img src="https://premiercomfortac.com/wp-content/uploads/company-logo.svg" alt="Premier Comfort Services"></a>
+  <div class="tright">
+    <a href="tel:5614443670" class="btn btn-ghost" style="padding:.6rem 1rem">Call</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</div>
+
+<div class="drawer" id="drawer">
+  <div class="scrim" id="scrim"></div>
+  <div class="panel">
+    <a href="#services">Services</a><a href="#why">Why Premier</a><a href="#work">Our Work</a>
+    <a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#contact">Contact</a>
+    <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="btn btn-orange" style="margin-top:1rem">Book Online</a>
+  </div>
+</div>
+
+<div class="shell" id="top">
+  <!-- SIDE RAIL -->
+  <aside class="rail">
+    <a href="#top" class="logo"><img src="https://premiercomfortac.com/wp-content/uploads/company-logo.svg" alt="Premier Comfort Services"></a>
+    <nav>
+      <a href="#services"><span class="n">01</span> Services</a>
+      <a href="#why"><span class="n">02</span> Why Premier</a>
+      <a href="#work"><span class="n">03</span> Our Work</a>
+      <a href="#reviews"><span class="n">04</span> Reviews</a>
+      <a href="#area"><span class="n">05</span> Service Area</a>
+      <a href="#contact"><span class="n">06</span> Contact</a>
+    </nav>
+    <div class="railcta">
+      <a href="tel:5614443670" class="phone"><small>West Palm Beach</small>561-444-3670</a>
+      <a href="tel:4075303670" class="phone"><small>Orlando</small>407-530-3670</a>
+      <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="btn btn-orange">Book Online</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/PremierComfortFL/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v7h3v-7h2.5l.5-3H14V9z"/></svg></a>
+        <a href="https://www.instagram.com/premiercomfortac/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10.5 2.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a>
+        <a href="https://www.youtube.com/@premiercomfortservicesinc.167" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.4-5.1a2.7 2.7 0 0 0-1.9-1.9C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.7.5a2.7 2.7 0 0 0-1.9 1.9C1 8.5 1 12 1 12s0 3.5.4 5.1a2.7 2.7 0 0 0 1.9 1.9c1.8.5 8.7.5 8.7.5s6.9 0 8.7-.5a2.7 2.7 0 0 0 1.9-1.9C23 15.5 23 12 23 12zM10 15.5v-7l6 3.5z"/></svg></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="clouds"></div>
+      <div class="inner">
+        <div>
+          <span class="kicker">🛡️ Veteran-Owned · <b>Since 2011</b></span>
+          <h1>Excellence<span class="is">is our standard.</span></h1>
+          <p class="lead">One call for HVAC, plumbing, and electrical across West Palm Beach, Orlando, and South &amp; Central Florida. Upfront pricing, friendly experts, and a free instant quote before we ever arrive.</p>
+          <div class="cta">
+            <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="btn btn-orange">Book Online</a>
+            <a href="https://premiercomfortac.com/online-quote" target="_blank" class="btn btn-ghost">Get an Instant Quote</a>
+          </div>
+          <div class="trades-line">
+            <span><b>❄</b> Cooling</span><span><b>🔥</b> Heating</span><span><b>🔧</b> Plumbing</span><span><b>⚡</b> Electrical</span>
+          </div>
+        </div>
+        <div class="mascot">
+          <img src="https://premiercomfortac.com/wp-content/uploads/mascot.svg" alt="Premier Comfort superhero AC mascot">
+          <div class="badge-vet"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/></svg> Fully Licensed &amp; Insured</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker"><div class="run">
+      <span>Cooling</span><span class="dot">✦</span><span>Heating</span><span class="dot">✦</span><span>Plumbing</span><span class="dot">✦</span><span>Electrical</span><span class="dot">✦</span><span>Indoor Air Quality</span><span class="dot">✦</span><span>Generators</span><span class="dot">✦</span><span>EV Charging</span><span class="dot">✦</span>
+      <span>Cooling</span><span class="dot">✦</span><span>Heating</span><span class="dot">✦</span><span>Plumbing</span><span class="dot">✦</span><span>Electrical</span><span class="dot">✦</span><span>Indoor Air Quality</span><span class="dot">✦</span><span>Generators</span><span class="dot">✦</span><span>EV Charging</span><span class="dot">✦</span>
+    </div></div>
+
+    <!-- SERVICES / PILLARS -->
+    <section class="sec light" id="services"><div class="box">
+      <div class="head-2 reveal">
+        <span class="eyebrow">One Team · Every Trade</span>
+        <h2>Your whole home, handled by one crew.</h2>
+        <p>Since 2011 we've been South &amp; Central Florida's one-stop shop. No juggling three companies. One number for cooling, heating, plumbing, and electrical.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar reveal"><div class="pn">01</div>
+          <div class="pic"><svg viewBox="0 0 24 24"><path d="M12 2v20M6 6 4 4M18 6l2-2M6 18l-2 2M18 18l2 2M2 12h20"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Cooling</h3>
+          <ul><li>AC Installation</li><li>AC Repair</li><li>AC Maintenance</li><li>Mini-Splits &amp; Packaged Units</li></ul>
+        </div>
+        <div class="pillar reveal"><div class="pn">02</div>
+          <div class="pic"><svg viewBox="0 0 24 24"><path d="M12 2s5 6 5 10a5 5 0 0 1-10 0c0-4 5-10 5-10z"/></svg></div>
+          <h3>Heating</h3>
+          <ul><li>Heating Installation</li><li>Heating Repair</li><li>Heat Pumps</li><li>Seasonal Tune-Ups</li></ul>
+        </div>
+        <div class="pillar reveal"><div class="pn">03</div>
+          <div class="pic"><svg viewBox="0 0 24 24"><path d="M9 3v6l-3 3a4 4 0 0 0 6 6l3-3h6M14 3l7 7"/></svg></div>
+          <h3>Plumbing</h3>
+          <ul><li>Drain Service &amp; Rooter</li><li>Plumbing Repair</li><li>Water Heaters &amp; Tankless</li><li>Gas Lines</li></ul>
+        </div>
+        <div class="pillar reveal"><div class="pn">04</div>
+          <div class="pic"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></div>
+          <h3>Electrical</h3>
+          <ul><li>Electrical Repair</li><li>Panel Replacements</li><li>Generators</li><li>EV Charging Stations</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:1.4rem;background:var(--navy);color:#fff;border-radius:var(--r);padding:1.4rem 1.7rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
+        <div><strong class="serif" style="font-size:1.25rem">Indoor Air Quality</strong> <span style="color:#c2c6ee">— air purification, UV lights, whole-home humidifiers, filtration &amp; ductwork.</span></div>
+        <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="btn btn-orange">Breathe Easier — Book</a>
+      </div>
+    </div></section>
+
+    <!-- WHY -->
+    <section class="sec why" id="why">
+      <img class="maskwm" src="https://premiercomfortac.com/wp-content/uploads/mascot.svg" alt="">
+      <div class="box">
+        <div class="head-2 reveal"><span class="eyebrow" style="color:var(--orange-2)">The Premier Difference</span>
+          <h2 style="color:#fff">Veteran-owned. Ready to be right there.</h2>
+          <p style="color:#bcc0e6">We built Premier on integrity, fast friendly service, upfront pricing, and quality work. It's why families across Florida call us first.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-item reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Veteran-Owned Integrity</h4><p>Owner-led by Chris and his team, with the discipline and honesty you'd expect from a veteran-owned company.</p></div>
+          <div class="why-item reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4>Upfront, Honest Pricing</h4><p>Free instant quotes on HVAC and water heaters, so you get fast, transparent pricing before we even arrive.</p></div>
+          <div class="why-item reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M3 3h18v14H3z"/><path d="M8 21h8M12 17v4"/></svg></div><h4>Financing &amp; Club Membership</h4><p>Flexible financing and a maintenance club so comfort fits your budget and your system keeps running strong.</p></div>
+          <div class="why-item reveal"><div class="wic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h4>7 AM – 7 PM, 6 Days</h4><p>Open Monday through Saturday and quick to respond. Closed Sundays for our families, because that matters.</p></div>
+          <div class="why-item reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div><h4>Fully Licensed, 3 Trades</h4><p>Licensed in AC, plumbing, and electrical, so one trusted company covers your entire home, correctly.</p></div>
+          <div class="why-item reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M3 11 22 2l-9 19-2-8z"/></svg></div><h4>Serving Two Regions</h4><p>Local crews in West Palm Beach and Orlando, covering South and Central Florida with the same standard.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK PHOTOS -->
+    <section id="work">
+      <div class="photos">
+        <div class="ph"><img loading="lazy" src="https://premiercomfortac.com/wp-content/uploads/Premier-Comfort-Van-Photo-1.png" alt="Premier Comfort service van" onerror="this.parentElement.style.display='none'"></div>
+        <div class="ph"><img loading="lazy" src="https://premiercomfortac.com/wp-content/uploads/tech-photo.webp" alt="Premier Comfort technician" onerror="this.parentElement.style.display='none'"></div>
+        <div class="ph"><img loading="lazy" src="https://premiercomfortac.com/wp-content/uploads/Vehicles-In-Front-of-House-1.png" alt="Premier Comfort fleet at a home" onerror="this.parentElement.style.display='none'"></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="sec reviews" id="reviews"><div class="box">
+      <div class="rev-head">
+        <div class="reveal"><span class="eyebrow">Real Customers</span>
+          <h2 class="serif" style="color:var(--navy);font-size:clamp(2rem,4vw,2.9rem);margin-top:.5rem">Loved across Florida.</h2>
+        </div>
+        <a href="https://g.page/r/CYv88sSCjNoYEBE/review" target="_blank" class="btn btn-navy">Read More on Google</a>
+      </div>
+      <div class="rev-grid">
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Efficient and very reliable. The technician Jason was exceptionally good — respectful, kind, and informative. He knew his plumbing well and was a delight. A true asset to the company."</p><div class="who"><span class="nm">Diane P.</span><span class="plat">Facebook</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Had a new air conditioner installed. Everything was great from the beginning. On installation day, James and Deral took their time and made sure everything was good. Very satisfied. Excellent!"</p><div class="who"><span class="nm">Shelly C.</span><span class="plat">Google</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Jason came out for my semi-annual tune up and did an amazing job. I work from home so he let me know when it might be loud. Best experience I've had with any company at my house. 100% recommend."</p><div class="who"><span class="nm">Alyssa S.</span><span class="plat">Facebook</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Gabe, James, and Mikentyre were great! They did a good job cleaning our ducts and cleaning up all the debris. Friendly and professional. Highly recommend!"</p><div class="who"><span class="nm">A. Nikrik</span><span class="plat">Google</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"James showed up on time and indulged all my questions about my high electric bill. No high-pressure sales talk. I appreciate the quality of service and the technician's integrity. Recommending you to friends and family!"</p><div class="who"><span class="nm">Levinda S.</span><span class="plat">Google</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Good leadership at the top! Chris, the owner, takes care of his employees and customers. Highly recommend!"</p><div class="who"><span class="nm">Gene S.</span><span class="plat">Facebook</span></div></div>
+      </div>
+    </div></section>
+
+    <!-- BOOKING CTA -->
+    <section class="sec booking" id="contact"><div class="glow"></div><div class="box">
+      <div class="book-grid">
+        <div class="reveal">
+          <span class="eyebrow" style="color:var(--orange-2)">Book in 60 Seconds</span>
+          <h2>Comfort is one click away.</h2>
+          <p>Schedule online through our booking system any time, day or night, or grab a free instant quote before we arrive. Prefer to talk? Call the crew nearest you.</p>
+          <div class="book-cta">
+            <a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="btn btn-orange">Book Online Now</a>
+            <a href="https://premiercomfortac.com/online-quote" target="_blank" class="btn btn-ghost">Free Instant Quote</a>
+          </div>
+        </div>
+        <div class="book-side reveal">
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div><div><h4>West Palm Beach</h4><a href="tel:5614443670">561-444-3670</a><br><span>5407 N Haverhill Rd, Ste 341, WPB, FL 33407</span></div></div>
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div><div><h4>Orlando / Clermont</h4><a href="tel:4075303670">407-530-3670</a><br><span>13629 Granville Ave, Clermont, FL 34711</span></div></div>
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h4>Hours</h4><span>Mon–Fri 7 AM–7 PM · Sat 7 AM–5 PM<br>Closed Sundays for our family</span></div></div>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- SERVICE AREA -->
+    <section class="sec light" id="area"><div class="box" style="text-align:center">
+      <span class="eyebrow">Where We Work</span>
+      <h2 style="color:var(--navy);font-size:clamp(2rem,4vw,2.9rem);margin:.6rem 0 1rem">Serving South &amp; Central Florida</h2>
+      <p style="color:var(--muted);max-width:640px;margin:0 auto 2rem">From West Palm Beach up through Orlando and the surrounding communities, our local crews bring the same standard of service to your door.</p>
+      <iframe title="Service area map" loading="lazy" style="border:0;width:100%;height:360px;border-radius:var(--r);box-shadow:var(--sh)" src="https://www.google.com/maps?q=West+Palm+Beach+FL&output=embed"></iframe>
+    </div></section>
+
+    <!-- FOOTER -->
+    <footer><div class="box" style="width:92%;max-width:1120px;margin:0 auto">
+      <div class="foot-grid">
+        <div>
+          <div style="background:#fff;border-radius:12px;padding:.6rem;display:inline-block;margin-bottom:.9rem"><img src="https://premiercomfortac.com/wp-content/uploads/company-logo.svg" alt="Premier Comfort Services" style="height:40px"></div>
+          <p>Veteran-owned HVAC, plumbing, and electrical for West Palm Beach, Orlando, and South &amp; Central Florida. Excellence is our standard.</p>
+        </div>
+        <div><h4>Services</h4><ul>
+          <li><a href="#services">Cooling &amp; Heating</a></li><li><a href="#services">Plumbing</a></li>
+          <li><a href="#services">Electrical</a></li><li><a href="#services">Indoor Air Quality</a></li>
+          <li><a href="https://premiercomfortac.com/financing/" target="_blank">Financing</a></li>
+          <li><a href="https://premiercomfortac.com/maintenance-plan/" target="_blank">Maintenance Club</a></li>
+        </ul></div>
+        <div><h4>West Palm Beach</h4><ul>
+          <li><a href="tel:5614443670">561-444-3670</a></li>
+          <li>5407 N Haverhill Rd, Ste 341</li><li>West Palm Beach, FL 33407</li>
+        </ul></div>
+        <div><h4>Orlando</h4><ul>
+          <li><a href="tel:4075303670">407-530-3670</a></li>
+          <li>13629 Granville Ave</li><li>Clermont, FL 34711</li>
+        </ul></div>
+      </div>
+      <div class="foot-bottom">
+        © <span id="yr"></span> Premier Comfort Services, Inc. All rights reserved.<br>
+        <span class="lic">Licensed: AC #CAC1816827 · Plumbing #CFC1430953 · Electrical #EC13012238</span>
+      </div>
+    </div></footer>
+
+  </main>
+</div>
+
+<a href="https://book.housecallpro.com/book/Premier-Comfort-Services/cd7a51b0f1854987ba1826fde0adbffa" target="_blank" class="callbar">📅 Book Online with Premier Comfort</a>
+
+<script>
+var d=document.getElementById('drawer');
+document.getElementById('menuBtn').addEventListener('click',function(){d.classList.add('open')});
+document.getElementById('scrim').addEventListener('click',function(){d.classList.remove('open')});
+document.querySelectorAll('#drawer .panel a').forEach(function(a){a.addEventListener('click',function(){d.classList.remove('open')})});
+document.getElementById('yr').textContent=new Date().getFullYear();
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
