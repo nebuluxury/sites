@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miklos Air, Inc. - AC &amp; Heating in Jupiter, FL | Family Owned Since 1984</title>
+<meta name="description" content="Family-owned AC and heating in Jupiter, FL since 1984. Trane Comfort Specialist and NATE-certified: AC repair, installation, maintenance, indoor air quality, commercial HVAC, and pool heating. Free second opinion on installs. Lic #CAC036799.">
+<meta name="theme-color" content="#12307a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#12307a; --navy-2:#1c3f96; --navy-3:#0d2359; --red:#c62128; --red-2:#e23b41;
+  --sky:#eef3fb; --sky-2:#dde8f6; --ink:#141c2e; --muted:#5a6577; --line:#dde5f0;
+  --r:16px; --sh:0 16px 44px rgba(18,48,122,.12); --sh-lg:0 30px 70px rgba(18,48,122,.20);
+  --disp:'Poppins',sans-serif; --body:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:#fff;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--disp);line-height:1.1;letter-spacing:-.01em;font-weight:800}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.kick{font-family:var(--disp);font-weight:700;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-weight:700;font-size:.95rem;padding:.9rem 1.5rem;border-radius:10px;transition:.2s;cursor:pointer;border:0}
+.btn svg{width:17px;height:17px}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 12px 26px rgba(198,33,40,.3)}
+.btn-red:hover{background:var(--red-2);transform:translateY(-2px)}
+.btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy-2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}.btn-ghost:hover{background:#ffffff14;border-color:#fff}
+.btn-white{background:#fff;color:var(--navy)}.btn-white:hover{transform:translateY(-2px)}
+
+.topbar{background:var(--red);color:#fff;text-align:center;font-family:var(--disp);font-weight:700;font-style:italic;font-size:.95rem;padding:.5rem 0}
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:.25s}
+.nav.sc{box-shadow:0 8px 24px rgba(18,48,122,.08)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
+.brand img{height:58px;width:auto}
+.brand .fb{font-family:var(--disp);font-weight:800;color:var(--navy);font-size:1.2rem;display:none}
+.nav-links{display:flex;gap:1.4rem;align-items:center;font-weight:500;font-size:.93rem}
+.nav-links a{color:var(--muted)}.nav-links a:hover{color:var(--navy)}
+.nav-right{display:flex;align-items:center;gap:.8rem}
+.nav-phone{font-family:var(--disp);font-weight:800;color:var(--red);font-size:1.05rem;white-space:nowrap}
+.menu{display:none;background:none;border:0;color:var(--navy);cursor:pointer}
+
+.hero{position:relative;background:linear-gradient(140deg,var(--navy) 0%,var(--navy-3) 100%);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 88% 12%,#ffffff14,transparent 60%),radial-gradient(50% 50% at 6% 92%,#c6212833,transparent 60%)}
+.hero .in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;padding:4.4rem 0}
+.hero .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.3rem}
+.hero .chip{background:#ffffff17;border:1px solid #ffffff30;border-radius:999px;padding:.35rem .8rem;font-size:.8rem;font-weight:600}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.1rem);margin:.3rem 0 1rem;line-height:1.02}
+.hero h1 .em{color:#ff5b60}
+.hero p.lead{font-size:1.16rem;color:#d5deef;max-width:520px;margin-bottom:1.9rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.8rem}
+.hero .trust{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;font-size:.9rem;color:#c3cfe6;font-weight:500;border-top:1px solid #ffffff26;padding-top:1.1rem}
+.hero .trust span{display:flex;align-items:center;gap:.45rem}
+.hero .trust svg{width:16px;height:16px;stroke:#ff5b60;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.hero-media{position:relative}
+.hero-media .frame{border-radius:20px;overflow:hidden;box-shadow:var(--sh-lg);aspect-ratio:4/3;background:var(--navy-2)}
+.hero-media .frame img{width:100%;height:100%;object-fit:cover}
+.hero-media .badge{position:absolute;left:-18px;bottom:-18px;background:var(--red);color:#fff;border-radius:14px;padding:.9rem 1.1rem;box-shadow:var(--sh-lg);text-align:center;font-family:var(--disp)}
+.hero-media .badge .b{font-weight:800;font-size:1.7rem;line-height:1}
+.hero-media .badge .s{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;opacity:.95}
+
+.strip{background:var(--navy-3);color:#fff}
+.strip .in{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.6rem 1.6rem;padding:1.2rem 0}
+.strip .lb{font-family:var(--disp);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8fa3ce;width:100%;text-align:center;margin-bottom:.2rem}
+.strip b{font-family:var(--disp);font-weight:700;color:#dbe6f6;font-size:1rem;opacity:.92}
+.strip .dot{color:#ff5b60;opacity:.7}
+
+section.pad{padding:5rem 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 3rem}
+.sec-h h2{font-size:clamp(2rem,3.9vw,2.8rem);color:var(--navy);margin:.7rem 0 .6rem}
+.sec-h p{color:var(--muted);font-size:1.05rem}
+
+.services{background:var(--sky)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.7rem;transition:.22s}
+.svc:hover{transform:translateY(-5px);box-shadow:var(--sh-lg);border-color:transparent}
+.svc .ic{width:54px;height:54px;border-radius:13px;background:linear-gradient(140deg,#12307a10,#c6212812);color:var(--navy);display:grid;place-items:center;margin-bottom:1rem}
+.svc .ic svg{width:27px;height:27px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:1.14rem;color:var(--navy);margin-bottom:.35rem;font-weight:700}
+.svc p{color:var(--muted);font-size:.93rem}
+
+.about{background:#fff}
+.about .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:3rem;align-items:center}
+.about .media{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-lg);aspect-ratio:4/3;background:var(--sky-2)}
+.about .media img{width:100%;height:100%;object-fit:cover}
+.about h2{font-size:clamp(1.9rem,3.6vw,2.6rem);color:var(--navy);margin:.6rem 0 .9rem}
+.about p{color:var(--muted);margin-bottom:1rem}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.6rem .9rem;margin:1.3rem 0}
+.checks li{display:flex;gap:.5rem;font-weight:600;font-size:.94rem}
+.checks li svg{width:19px;height:19px;stroke:var(--red);fill:none;stroke-width:2.4;flex:none;margin-top:2px}
+
+.book{background:linear-gradient(150deg,var(--navy),var(--navy-3));color:#fff;position:relative;overflow:hidden}
+.book .glow{position:absolute;width:540px;height:540px;border-radius:50%;background:radial-gradient(circle,#c6212833,transparent 62%);top:-200px;right:-140px}
+.book .grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.05fr;gap:3rem;align-items:center}
+.book h2{font-size:clamp(2rem,3.9vw,2.9rem);color:#fff;margin-bottom:.8rem}
+.book p{color:#c3cfe6;margin-bottom:1.5rem;max-width:440px}
+.book .bl{list-style:none;display:grid;gap:.8rem}
+.book .bl li{display:flex;gap:.7rem;align-items:center;color:#d5deef;font-weight:500}
+.book .bl svg{width:20px;height:20px;stroke:#ff5b60;fill:none;stroke-width:2.2;flex:none}
+.book .tag{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.3rem;font-size:.82rem;color:#9fb0d6;font-family:var(--disp);font-weight:600}
+.form{background:#fff;color:var(--ink);border-radius:16px;padding:1.8rem;box-shadow:var(--sh-lg)}
+.form h3{font-family:var(--disp);font-size:1.3rem;color:var(--navy);margin-bottom:.2rem}
+.form .fs{color:var(--muted);font-size:.9rem;margin-bottom:1.2rem}
+.field{margin-bottom:.85rem}
+.field label{font-size:.78rem;font-weight:700;color:var(--navy);display:block;margin-bottom:.3rem}
+.field input,.field select{width:100%;padding:.75rem .85rem;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:.95rem;color:var(--ink);background:#fff}
+.field input:focus,.field select:focus{outline:0;border-color:var(--navy);box-shadow:0 0 0 3px rgba(18,48,122,.13)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.form .btn{width:100%;justify-content:center;margin-top:.4rem}
+.ok{display:none;text-align:center;padding:2.2rem 1rem}
+.ok .c{width:58px;height:58px;border-radius:50%;background:rgba(18,48,122,.12);color:var(--navy);display:grid;place-items:center;margin:0 auto 1rem}
+.ok h3{font-family:var(--disp);color:var(--navy);font-size:1.25rem;margin-bottom:.3rem}.ok p{color:var(--muted)}
+
+.reviews{background:var(--sky)}
+.reviews .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.5rem}
+.rev .stars{color:#f5a623;letter-spacing:.1em;margin-bottom:.6rem;font-size:.9rem}
+.rev p{color:var(--ink);font-size:.92rem;margin-bottom:.9rem}
+.rev .by{font-family:var(--disp);font-weight:700;color:var(--navy);font-size:.9rem}
+.rev .by span{display:block;font-weight:500;color:var(--muted);font-size:.76rem}
+
+.fin{background:linear-gradient(120deg,var(--red),var(--red-2));color:#fff;text-align:center}
+.fin .in{padding:2.6rem 0}
+.fin h2{font-size:clamp(1.6rem,3.2vw,2.2rem);margin-bottom:.5rem}
+.fin p{opacity:.95;margin-bottom:1.3rem}
+
+.areas .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:2.6rem;align-items:stretch}
+.areas .list{columns:2;column-gap:1.4rem}
+.areas .list span{display:block;padding:.5rem 0;color:var(--ink);font-weight:600;border-bottom:1px solid var(--line)}
+.map{border:0;width:100%;height:100%;min-height:340px;border-radius:var(--r);box-shadow:var(--sh)}
+
+footer{background:var(--navy-3);color:#a9b8d6;padding:3rem 0 1.5rem;font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2rem;padding-bottom:1.8rem;border-bottom:1px solid #ffffff14}
+footer h4{font-family:var(--disp);color:#fff;font-size:1rem;margin-bottom:.8rem}
+footer .fn{font-family:var(--disp);font-weight:800;font-size:1.25rem;color:#fff}
+footer ul{list-style:none}footer li{margin-bottom:.42rem}footer a:hover{color:#fff}
+.fbot{padding-top:1.2rem;text-align:center;font-size:.8rem;color:#7d8fb8}
+
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:var(--red);color:#fff;text-align:center;padding:.9rem;font-family:var(--disp);font-weight:700}
+.rv{opacity:0;transform:translateY(20px);transition:.7s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+
+@media(max-width:960px){
+  .nav-links{display:none}.menu{display:block}
+  .hero .in,.about .grid,.book .grid,.areas .grid{grid-template-columns:1fr;gap:2.2rem}
+  .svc-grid{grid-template-columns:1fr 1fr}.reviews .grid{grid-template-columns:1fr 1fr}
+  .hero-media,.about .media{order:-1}
+}
+@media(max-width:560px){
+  .svc-grid,.checks,.frow,.fgrid,.reviews .grid,.areas .list{grid-template-columns:1fr}
+  .areas .list{columns:1}
+  .nav-phone{display:none}.callbar{display:block}body{padding-bottom:56px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">We Show Up. Family Owned &amp; Operated Since 1984.</div>
+<nav class="nav" id="nav"><div class="wrap in">
+  <a href="#top" class="brand">
+    <img src="https://miklosair.com/wp-content/uploads/2019/10/logo-miklos.png" alt="Miklos Air, Inc." onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="fb">Miklos Air</span>
+  </a>
+  <div class="nav-links">
+    <a href="#services">Services</a><a href="#book">Book</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#areas">Service Area</a><a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:5615752173" class="nav-phone">(561) 575-2173</a>
+    <a href="#book" class="btn btn-red">Request Appointment</a>
+    <button class="menu" id="menu" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</div></nav>
+
+<span id="top"></span>
+<section class="hero" id="home"><div class="wrap in">
+  <div>
+    <div class="chips"><span class="chip">🛠 Since 1984</span><span class="chip">Trane Comfort Specialist</span><span class="chip">NATE Certified</span></div>
+    <h1>The team that <span class="em">shows up.</span></h1>
+    <p class="lead">Family-owned in Jupiter for over 40 years, Miklos Air keeps your home comfortable with honest AC and heating service, and we actually show up when we say we will.</p>
+    <div class="cta">
+      <a href="#book" class="btn btn-red">Request an Appointment</a>
+      <a href="tel:5615752173" class="btn btn-ghost">📞 (561) 575-2173</a>
+    </div>
+    <div class="trust">
+      <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Free 2nd opinion on installs</span>
+      <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Financing available</span>
+      <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Lic #CAC036799</span>
+    </div>
+  </div>
+  <div class="hero-media">
+    <div class="frame"><img src="https://miklosair.com/wp-content/uploads/2019/09/ac-services.jpg" alt="Miklos Air technician servicing an AC system" onerror="this.parentElement.style.background='linear-gradient(140deg,#1c3f96,#0d2359)'"></div>
+    <div class="badge"><div class="b">40+</div><div class="s">Years in<br>Jupiter</div></div>
+  </div>
+</div></section>
+
+<div class="strip"><div class="wrap in">
+  <span class="lb">Trusted, certified, local</span>
+  <b>Trane Comfort Specialist</b><span class="dot">•</span><b>NATE Certified</b><span class="dot">•</span><b>Financing Available</b><span class="dot">•</span><b>Family Owned Since 1984</b>
+</div></div>
+
+<section class="pad services" id="services"><div class="wrap">
+  <div class="sec-h rv"><span class="kick">What We Do</span><h2>Complete home comfort, done right</h2><p>From a summer AC breakdown to a full system install, one family-owned team handles it all.</p></div>
+  <div class="svc-grid">
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2v20M6 6 4 4M18 6l2-2M6 18l-2 2M18 18l2 2M2 12h20"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Air Conditioning</h3><p>Repair, installation, and maintenance on every make and model, fast and fair.</p></div>
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2s5 6 5 10a5 5 0 0 1-10 0c0-4 5-10 5-10z"/></svg></div><h3>Heating</h3><p>Heat pump and system service to keep you cozy on cooler South Florida nights.</p></div>
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 12a4 4 0 1 1 6 3.5M9 8a3 3 0 1 1 4 3M6 16h11a3 3 0 1 0-1-5.8"/></svg></div><h3>Indoor Air Quality</h3><p>Purification, filtration, and humidity control for a cleaner, healthier home.</p></div>
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l4-2 4 2 4-2v13M9 21v-5h4v5"/></svg></div><h3>Commercial HVAC</h3><p>Reliable cooling and service for offices, shops, and light commercial spaces.</p></div>
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 19c2-2 4-2 6 0s4 2 6 0 4-2 6 0M6 11a6 6 0 0 1 12 0"/></svg></div><h3>Pool Heating</h3><p>Extend your swim season with efficient pool heating installation and service.</p></div>
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4 12H1M23 12h-3M5 5l2 2M17 17l2 2"/></svg></div><h3>Maintenance Plans</h3><p>Seasonal tune-ups that keep systems efficient and head off breakdowns.</p></div>
+  </div>
+</div></section>
+
+<section class="pad about" id="about"><div class="wrap"><div class="grid">
+  <div class="media rv"><img src="https://miklosair.com/wp-content/uploads/2019/09/heating-services.jpg" alt="Miklos Air heating and cooling work" onerror="this.parentElement.style.background='linear-gradient(140deg,#1c3f96,#0d2359)'"></div>
+  <div class="rv">
+    <span class="kick">Who We Are</span>
+    <h2>Run by the Miklos family since 1984.</h2>
+    <p>Steve and DeeAnn Miklos started this company on a simple promise: show up, do honest work, and treat every home like your own. Four decades later that is still exactly how we operate.</p>
+    <p>As a Trane Comfort Specialist with NATE-certified technicians, we bring the training and the tools, without the pushy sales pitch. Not sure you need that new system? Ask for a free second opinion.</p>
+    <ul class="checks">
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Family owned &amp; operated</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> NATE-certified techs</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Trane Comfort Specialist</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Free second opinions</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Financing available</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5"/></svg> Licensed #CAC036799</li>
+    </ul>
+  </div>
+</div></div></section>
+
+<section class="pad book" id="book"><div class="glow"></div><div class="wrap"><div class="grid">
+  <div class="rv">
+    <span class="kick" style="color:#ff5b60">Request an Appointment</span>
+    <h2>Book your visit in a minute.</h2>
+    <p>Tell us what is going on and when works for you. We will confirm fast and, true to our name, we will show up.</p>
+    <ul class="bl">
+      <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Request any time, day or night</li>
+      <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg> Fast confirmation by phone or text</li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/></svg> Licensed, NATE-certified pros</li>
+    </ul>
+    <div class="tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Online scheduling (connects to your booking app)</div>
+  </div>
+  <div class="rv">
+    <form class="form" id="bf">
+      <h3>Request Service</h3>
+      <div class="fs">No obligation. We confirm within the hour during business hours.</div>
+      <div class="field"><label>Service needed</label><select required><option value="">Choose one…</option><option>AC Repair</option><option>AC Installation</option><option>Heating</option><option>Indoor Air Quality</option><option>Pool Heating</option><option>Commercial HVAC</option><option>Maintenance / Tune-Up</option></select></div>
+      <div class="frow">
+        <div class="field"><label>Preferred date</label><input type="date" required></div>
+        <div class="field"><label>Time</label><select required><option value="">Choose…</option><option>Morning</option><option>Afternoon</option><option>ASAP</option></select></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label>Name</label><input type="text" required placeholder="Your name"></div>
+        <div class="field"><label>Phone</label><input type="tel" required placeholder="(561) 000-0000"></div>
+      </div>
+      <div class="field"><label>Address / area</label><input type="text" placeholder="Jupiter, FL"></div>
+      <button type="submit" class="btn btn-red">Request Appointment</button>
+    </form>
+    <div class="form ok" id="ok"><div class="c"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div><h3>Request received!</h3><p>We'll confirm your appointment shortly. Need it sooner? Call (561) 575-2173.</p></div>
+  </div>
+</div></div></section>
+
+<section class="pad reviews" id="reviews"><div class="wrap">
+  <div class="sec-h rv"><span class="kick">Reviews</span><h2>Neighbors who trust Miklos</h2></div>
+  <div class="grid">
+    <div class="rev rv"><div class="stars">★★★★★</div><p>"Prompt, professional, and honest. They fixed the problem the other company missed and did not try to sell me a whole new unit."</p><div class="by">Chuck C.<span>Palm Beach Gardens</span></div></div>
+    <div class="rev rv"><div class="stars">★★★★★</div><p>"Been using Miklos for years. Always on time, always fair. You can tell it is a family business that actually cares."</p><div class="by">C. Vinez<span>Jupiter</span></div></div>
+    <div class="rev rv"><div class="stars">★★★★★</div><p>"Great service from start to finish. The technician explained everything and left the place spotless. Highly recommend."</p><div class="by">L. Seidman<span>Tequesta</span></div></div>
+    <div class="rev rv"><div class="stars">★★★★★</div><p>"Reliable and trustworthy. Miklos has taken care of our home for years and never once let us down."</p><div class="by">Mary L.<span>Frenchman's Reserve</span></div></div>
+  </div>
+</div></section>
+
+<div class="fin"><div class="wrap in">
+  <span class="kick" style="color:#ffe1e2">Specials &amp; Financing</span>
+  <h2>Free second opinion on installs and replacements.</h2>
+  <p>Before you replace that system, let us take a look. Ask about financing to fit your budget.</p>
+  <a href="#book" class="btn btn-white">Request Your Free Opinion</a>
+</div></div>
+
+<section class="pad areas" id="areas"><div class="wrap">
+  <div class="sec-h rv"><span class="kick">Service Area</span><h2>Serving Jupiter and the Palm Beaches</h2><p>Local crews across northern Palm Beach and Martin County.</p></div>
+  <div class="grid">
+    <div class="rv"><div class="list">
+      <span>Jupiter</span><span>Palm Beach Gardens</span><span>Tequesta</span><span>North Palm Beach</span><span>Juno Beach</span><span>Hobe Sound</span><span>Stuart</span><span>The Acreage</span>
+    </div><p style="color:var(--muted);margin-top:1rem;font-size:.9rem">Not sure if you're in our area? Just give us a call.</p></div>
+    <iframe class="map rv" loading="lazy" src="https://www.google.com/maps?q=231+Jupiter+St+Jupiter+FL+33458&output=embed" title="Miklos Air service area"></iframe>
+  </div>
+</div></section>
+
+<section class="pad" id="contact" style="background:var(--sky)"><div class="wrap">
+  <div class="sec-h rv"><span class="kick">Contact</span><h2>Call, or request a visit online</h2></div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem">
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div><h3>Phone</h3><p><a href="tel:5615752173">(561) 575-2173</a></p></div>
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Office</h3><p>231 Jupiter St, Jupiter, FL 33458</p></div>
+    <div class="svc rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/></svg></div><h3>Licensed</h3><p>FL Lic #CAC036799<br>Family owned since 1984</p></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div>
+      <div class="fn">Miklos Air, Inc.</div>
+      <p style="margin-top:.8rem;max-width:300px">Family-owned air conditioning and heating in Jupiter, FL since 1984. Trane Comfort Specialist. We show up.</p>
+    </div>
+    <div><h4>Services</h4><ul><li><a href="#services">Air Conditioning</a></li><li><a href="#services">Heating</a></li><li><a href="#services">Pool Heating</a></li><li><a href="#services">Commercial HVAC</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>📞 <a href="tel:5615752173">(561) 575-2173</a></li><li>📍 231 Jupiter St, Jupiter, FL</li><li><a href="#book">Request Appointment</a></li></ul></div>
+  </div>
+  <div class="fbot">© <span id="yr"></span> Miklos Air, Inc. · Jupiter, FL · FL Lic #CAC036799</div>
+</div></footer>
+
+<a href="#book" class="callbar">📅 Request an Appointment</a>
+
+<script>
+var n=document.getElementById('nav');addEventListener('scroll',function(){n.classList.toggle('sc',scrollY>14)});
+document.getElementById('menu').addEventListener('click',function(){var l=document.querySelector('.nav-links');l.style.cssText='display:flex;position:absolute;top:100%;left:4%;right:4%;flex-direction:column;background:#fff;padding:1.2rem;border-radius:14px;box-shadow:var(--sh-lg);gap:.9rem'});
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';var k=document.getElementById('ok');k.style.display='block';k.scrollIntoView({behavior:'smooth',block:'center'})});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
